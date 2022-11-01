@@ -1,3 +1,29 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: 'Montserrat';
+    src: url('/fonts/montserrat/static/Montserrat-Medium.ttf');
+    font-weight: 400;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Montserrat';
+    src: url('/fonts/montserrat/static/Montserrat-Bold.ttf');
+    font-weight: 700;
+  }
+
+
+  @font-face {
+    font-family: 'Fraunces';
+    src: url('/fonts/fraunces/static/Fraunces_72pt/Fraunces_72pt-Bold.ttf');
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  :root {
+    @apply bg-cream font-montserrat;
+  }
+}
